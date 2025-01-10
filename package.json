@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "build": "tsup src/",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@types/node": "^22.10.5",
@@ -13,6 +15,7 @@
     "typescript": "^5.7.3"
   },
   "devDependencies": {
-    "@types/pg": "^8.11.10"
+    "@types/pg": "^8.11.10",
+    "tsup": "^8.3.5"
   }
 }
